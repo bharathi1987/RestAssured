@@ -1,13 +1,13 @@
 package com.API.BDD;
 
 import io.restassured.RestAssured;
-import org.testng.annotations.Test;
+//import org.testng.annotations.Test;
 
 import java.io.File;
 
 public class ExternalJSONFile {
 
-    @Test
+   // @Test
     public void postAPIWithExternalJSONFile()
     {
 

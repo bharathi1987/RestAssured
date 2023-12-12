@@ -11,7 +11,7 @@ public class ListHackerRank {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
 
-        ArrayList<Integer> arrayList=new ArrayList<>();
+        ArrayList<Integer> arrayList=new ArrayList<Integer>();
         for (int i=0; i<n;i++)
         {
             arrayList.add(sc.nextInt());

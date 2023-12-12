@@ -4,11 +4,10 @@ import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.testng.annotations.Test;
 
 public class GetAPICall {
 
-    @Test
+   // @Test
     public void getAPICall()
     {
         RestAssured.baseURI="https://reqres.in/";

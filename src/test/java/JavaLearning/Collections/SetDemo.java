@@ -1,6 +1,5 @@
 package JavaLearning.Collections;
 
-import org.testng.annotations.Test;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -8,7 +7,7 @@ import java.util.TreeSet;
 
 public class SetDemo {
 
-    @Test
+  //  @Test
     public void setDemo1()
     {
         HashSet hashSet =new HashSet();
@@ -26,7 +25,7 @@ public class SetDemo {
 
    }
 
-   @Test
+  // @Test
     public void treeSetDemo()
    {
        TreeSet<String> mySet = new TreeSet<String>();
@@ -37,7 +36,7 @@ public class SetDemo {
            System.out.println(d);
        }
    }
-    @Test
+   // @Test
     public void treeSetDemo1()
     {
         TreeSet<Integer> mySet = new TreeSet<Integer>();

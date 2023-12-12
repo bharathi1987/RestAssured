@@ -7,9 +7,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "classpath:Features/FirstFeature.feature"
-        ,glue={"classpath:stepDefiniton"},
-        tags = "@Cucumberfirsttest"
+        features = "classpath:Features/"
+        ,glue={"classpath:stepDefiniton"}
+      //  tags = "@Cucumberfirsttest"
 )
 
 public class RunnerClass {

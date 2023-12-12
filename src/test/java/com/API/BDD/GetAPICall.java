@@ -2,11 +2,11 @@ package com.API.BDD;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import org.testng.annotations.Test;
+//mport org.testng.annotations.Test;
 
 public class GetAPICall {
 
-    @Test
+
     public void getAPICall()
     {
 
@@ -18,7 +18,6 @@ public class GetAPICall {
                 .prettyPrint();
     }
 
-    @Test
     public void postAPICall()
     {
 
@@ -37,7 +36,6 @@ public class GetAPICall {
 
     }
 
-    @Test
     public void putRequest()
     {
         RestAssured
@@ -53,7 +51,6 @@ public class GetAPICall {
                 .getStatusLine();
     }
 
-    @Test
     public void deleteRequest()
     {
         Response response=RestAssured

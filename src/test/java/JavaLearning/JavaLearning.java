@@ -1,10 +1,9 @@
 package JavaLearning;
 
-import org.testng.annotations.Test;
+//import org.testng.annotations.Test;
 
 public class JavaLearning {
 
-    @Test
     public void SwitchStatement()
     {
         int a=11;
@@ -22,7 +21,6 @@ public class JavaLearning {
         }
     }
 
-    @Test
     public void SwitchStatement1()
     {
         int a=11;
@@ -59,7 +57,7 @@ public class JavaLearning {
     }*/
 
 
-    @Test
+   // @Test
     public void SwitchStatement3()
     {
         int a=11;

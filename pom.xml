@@ -58,11 +58,16 @@
             <artifactId>guava</artifactId>
             <version>23.0</version>
         </dependency>
-        <dependency>
+     <!--   <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.8</version>
             <scope>test</scope>
+        </dependency>-->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.2.2</version>
         </dependency>
     </dependencies>
 
@@ -73,12 +78,26 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                    <compilerArgument>-Werror</compilerArgument>
 
+                <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+
+
+            </plugin>
+            <plugin>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <version>3.0.0-M3</version>
+                <inherited>false</inherited>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.12.4</version>
+                <configuration combine.children="append">
+
+                    <includes>
+                        <include>**/RunnerClass*.java</include>
+                    </includes>
                 </configuration>
             </plugin>
         </plugins>

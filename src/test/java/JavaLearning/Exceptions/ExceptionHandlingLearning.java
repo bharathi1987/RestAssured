@@ -1,10 +1,10 @@
 package JavaLearning.Exceptions;
 
-import org.testng.annotations.Test;
+//import org.testng.annotations.Test;
 
 public class ExceptionHandlingLearning {
 
-    @Test
+   // @Test
     public void ExceptionHadlingUseCase1()
     {
         try
