@@ -4,8 +4,11 @@ package JavaLearning;
 
 public class JavaLearning {
 
+
+
     public void SwitchStatement()
     {
+        final int b=11;
         int a=11;
 
         switch (a)

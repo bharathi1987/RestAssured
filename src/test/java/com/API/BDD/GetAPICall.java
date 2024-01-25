@@ -1,7 +1,9 @@
 package com.API.BDD;
 
 import io.restassured.RestAssured;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
+import org.openqa.selenium.json.Json;
 //mport org.testng.annotations.Test;
 
 public class GetAPICall {
@@ -21,8 +23,9 @@ public class GetAPICall {
     public void postAPICall()
     {
 
-        Response response=RestAssured
+        Response response= (Response) RestAssured
                 .given()
+                .auth().basic("","")
                 .baseUri("https://reqres.in/")
                 .header("Content-Type","application/json")
                 .body("{\n" +
@@ -30,9 +33,12 @@ public class GetAPICall {
                         "    \"job\": \"leader\"\n" +
                         "}")
                 .when()
-                .post("api/users");
+                .post("api/users")
+                        .then()
+                                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath(""));
 
         System.out.println("Response=============="+response.getStatusLine());
+
 
     }
 

@@ -51,5 +51,27 @@ public class SetDemo {
 
 
 
+    //Enum
+/*
+    public class test{
+
+        enum Day {
+            MONDAY,TUESDAY,WEDNESDAY,SATURDAY,THURSDAY,FRIDAY,SUNDAY
+        }
+        public static void main (String args[]) {
+            Set mySet = new TreeSet();
+            mySet.add(JavaLearning.Collections.test.Day.SATURDAY);
+            mySet.add(JavaLearning.Collections.test.Day.WEDNESDAY);
+            mySet.add(JavaLearning.Collections.test.Day.FRIDAY);
+            mySet.add(JavaLearning.Collections.test.Day.WEDNESDAY);
+            for(Object d: mySet){
+                System.out.println(d);
+            }
+
+
+        }
+    }*/
+
+
 
 }

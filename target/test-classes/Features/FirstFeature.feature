@@ -5,3 +5,4 @@
     @Cucumberfirsttest
     Scenario: Test
       Given GetAPICALL
+      |Test|Test|

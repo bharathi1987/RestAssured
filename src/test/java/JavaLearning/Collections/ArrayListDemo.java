@@ -10,7 +10,11 @@ public class ArrayListDemo {
 
     public  static void main(String args[])
     {
+
+        ArrayListDemo arrayListDemo=new ArrayListDemo();
         ArrayList<String> colours=new ArrayList();
+        ArrayList<Integer> colours1=new ArrayList();
+        colours1.add(1);
 
         colours.add("red");
         colours.add("blue");
